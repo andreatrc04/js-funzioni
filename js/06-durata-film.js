@@ -1,21 +1,23 @@
 // Traccia 06 · La durata del film
 // La consegna è nel README, alla voce "06 · La durata del film".
 
-/*
-  LE QUATTRO DOMANDE (una risposta per ogni funzione)
-  Come si chiama?
-  Di quali dati ha bisogno?
-  Deve restituire qualcosa?
-  Di che tipo?
+function formattaDurata(minuti) {
+  let ore = Math.floor(minuti / 60);
+  let minutiRestanti = minuti % 60;
+  if (ore === 0) {
+    return minutiRestanti + " minuti";
+  }
+  if (minutiRestanti === 0) {
+    if (ore === 1) {
+      return ore + " ora"
+    }
+    return ore + " ore"
+  }
+  if (ore === 1) {
+    return 1 + " ora e " + minutiRestanti + " minuti";
+  }
+  return ore + " ore e " + minutiRestanti + " minuti";
+}
 
-  STEPS
-  1 -
-  2 -
-  3 -
-*/
-
-// # La funzione
-
-
-// # Le prove: una riga di console.log per ogni caso di "Come verifichi"
-
+let minuti = parseInt(prompt("Dimmi durata"));
+alert(formattaDurata(minuti));

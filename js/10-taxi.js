@@ -1,21 +1,23 @@
 // Traccia 10 · Il taxi di notte
 // La consegna è nel README, alla voce "10 · Il taxi di notte".
 
-/*
-  LE QUATTRO DOMANDE (una risposta per ogni funzione)
-  Come si chiama?
-  Di quali dati ha bisogno?
-  Deve restituire qualcosa?
-  Di che tipo?
+function verificaOraNotturna(ora) {
+  if (ora <= 5) {
+    return true;
+  }
+  return false;
+}
 
-  STEPS
-  1 -
-  2 -
-  3 -
-*/
+function calcolaTotaleCorsa(prezzoBase, oraPartenza, oraArrivo) {
+  if (verificaOraNotturna(oraPartenza) || verificaOraNotturna(oraArrivo)) {
+    let totaleCorsa = prezzoBase + 5;
+    return totaleCorsa;
+  }
+  return prezzoBase;
+}
 
-// # Le funzioni
-
-
-// # Le prove: una riga di console.log per ogni caso di "Come verifichi"
+let prezzoBase = parseInt(prompt("Dammi prezzo Base"));
+let oraPartenza = parseInt(prompt("Dimmi ora di partenza"));
+let oraArrivo = parseInt(prompt("Dimmi ora di arrivo"));
+alert(calcolaTotaleCorsa(prezzoBase, oraPartenza, oraArrivo,));
 

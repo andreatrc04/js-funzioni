@@ -1,21 +1,19 @@
 // Traccia 01 · Lo stato della spedizione
 // La consegna è nel README, alla voce "01 · Lo stato della spedizione".
 
-/*
-  LE QUATTRO DOMANDE (una risposta per ogni funzione)
-  Come si chiama?
-  Di quali dati ha bisogno?
-  Deve restituire qualcosa?
-  Di che tipo?
-
-  STEPS
-  1 -
-  2 -
-  3 -
-*/
-
-// # La funzione
+function trovaStatoSpedizione(stato) {
+  if (stato === 1) {
+    return "In elaborazione";
+  } else if (stato === 2) {
+    return "Spedito";
+  } else if (stato === 3) {
+    return "Consegnato";
+  }
+  return "Stato sconosciuto";
+}
 
 
-// # Le prove: una riga di console.log per ogni caso di "Come verifichi"
+let stato = prompt("dammi codice spedizione");
+stato = parseInt(stato);
+alert(trovaStatoSpedizione(stato));
 

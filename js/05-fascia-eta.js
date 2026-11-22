@@ -1,21 +1,22 @@
 // Traccia 05 · La fascia d'età
 // La consegna è nel README, alla voce "05 · La fascia d'età".
 
-/*
-  LE QUATTRO DOMANDE (una risposta per ogni funzione)
-  Come si chiama?
-  Di quali dati ha bisogno?
-  Deve restituire qualcosa?
-  Di che tipo?
+function trovaFasciaEta(eta) {
+  if (eta < 0) {
+    return "Età non valida"
+  }
+  if (eta <= 17) {
+    return "Minorenne";
+  }
+  if (eta <= 35) {
+    return "Giovane Adulto";
+  }
+  if (eta <= 60) {
+    return "Adulto";
+  }
+  return "Senior";
 
-  STEPS
-  1 -
-  2 -
-  3 -
-*/
+}
 
-// # La funzione
-
-
-// # Le prove: una riga di console.log per ogni caso di "Come verifichi"
-
+let eta = parseInt(prompt("Dimmi età"));
+alert(trovaFasciaEta(eta));

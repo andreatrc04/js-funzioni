@@ -1,21 +1,15 @@
 // Traccia 08 · Dal nome al numero del giorno
 // La consegna è nel README, alla voce "08 · Dal nome al numero del giorno".
 
-/*
-  LE QUATTRO DOMANDE (una risposta per ogni funzione)
-  Come si chiama?
-  Di quali dati ha bisogno?
-  Deve restituire qualcosa?
-  Di che tipo?
+function trovaNumeroGiorno(giorno) {
+  let nomeGiorni = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"]
+  for (let i = 0; i < 7; i++) {
+    if (nomeGiorni[i] === giorno) {
+      return i + 1;
+    }
+  }
+  return 0;
+}
 
-  STEPS
-  1 -
-  2 -
-  3 -
-*/
-
-// # La funzione
-
-
-// # Le prove: una riga di console.log per ogni caso di "Come verifichi"
-
+let giorno = prompt("Dammi nome giorno");
+alert(trovaNumeroGiorno(giorno));
