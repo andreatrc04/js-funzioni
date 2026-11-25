@@ -1,21 +1,36 @@
 // Traccia 12 · Una riga sola
 // La consegna è nel README, alla voce "12 · Una riga sola".
 
-/*
-  LE QUATTRO DOMANDE (una risposta per ogni funzione)
-  Come si chiama?
-  Di quali dati ha bisogno?
-  Deve restituire qualcosa?
-  Di che tipo?
+//#1
+const calcolaPrezzoConIva = (prezzoNetto) => prezzoNetto + (prezzoNetto * 22) / 100;
+console.log(calcolaPrezzoConIva(10));
+console.log(calcolaPrezzoConIva(100));
+console.log(calcolaPrezzoConIva(0));
 
-  STEPS
-  1 -
-  2 -
-  3 -
+//#2
+const calcolaAreaRettangolo = (base, altezza) => base * altezza;
+console.log(calcolaAreaRettangolo(4, 5));
+console.log(calcolaAreaRettangolo(2.5, 2));
+
+//#3
+const verificaNumeroPari = (numero) => numero % 2 === 0;
+console.log(verificaNumeroPari(4));
+console.log(verificaNumeroPari(7));
+console.log(verificaNumeroPari(0));
+
+//#4 prova
+/*const calcolaPrezzoConIva = (prezzoNetto) => {prezzoNetto + (prezzoNetto * 22) / 100};
+console.log(calcolaPrezzoConIva(10));
+console.log(calcolaPrezzoConIva(100));
+console.log(calcolaPrezzoConIva(0));
 */
 
-// # Le arrow function, con il return implicito: una riga ciascuna
+//#4 reale
+const convertiCelsiusInFahrenheit = (gradiCelsius) => (((gradiCelsius * 9) / 5) + 32);
+console.log(convertiCelsiusInFahrenheit(0));
+console.log(convertiCelsiusInFahrenheit(100));
+console.log(convertiCelsiusInFahrenheit(20));
+console.log(convertiCelsiusInFahrenheit(-40));
 
 
-// # Le prove: una riga di console.log per ogni caso di "Come verifichi"
 

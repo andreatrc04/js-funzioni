@@ -1,21 +1,19 @@
 // Traccia 13 · Un parametro solo
 // La consegna è nel README, alla voce "13 · Un parametro solo".
 
-/*
-  LE QUATTRO DOMANDE (una risposta per ogni funzione)
-  Come si chiama?
-  Di quali dati ha bisogno?
-  Deve restituire qualcosa?
-  Di che tipo?
+//#1
+const calcolaMancia = totaleConto => totaleConto * 10 / 100;
+console.log(calcolaMancia(20));
 
-  STEPS
-  1 -
-  2 -
-  3 -
-*/
+//#2
+const formattaPrezzo = (prezzo) => prezzo.toFixed(2) + " €"
+console.log(formattaPrezzo(4.5));
+console.log(formattaPrezzo(12));
+console.log(formattaPrezzo(0.7));
+console.log(formattaPrezzo(calcolaMancia(45)));
 
-// # Le arrow function
-
-
-// # Le prove: una riga di console.log per ogni caso di "Come verifichi"
-
+//#3
+const verificaMaggiorenne = (eta) => eta >= 18;
+console.log(verificaMaggiorenne(17));
+console.log(verificaMaggiorenne(18));
+console.log(verificaMaggiorenne(40));
